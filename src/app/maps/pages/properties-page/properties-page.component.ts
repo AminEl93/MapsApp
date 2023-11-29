@@ -30,8 +30,18 @@ export class PropertiesPageComponent {
         },
         {
             title: 'Universidad de Qarawiyyin, Fez',
-            description: 'Institución universitaria más antigua de la historia todavía en funcionamiento, situada en la ciudad de Fez (Marruecos)',
+            description: 'Institución universitaria más antigua de la historia construida en el año 859 que todavía está en funcionamiento, situada en la ciudad de Fez (Marruecos)',
             lngLat: [-4.973081723779302, 34.06454667232245]
+        },
+        {
+            title: 'Alhambra, Granada',
+            description: 'Conjunto de antiguos palacios, jardines y fortalezas árabes construidos a principios del siglo XIV que son Patrimonio de la Humanidad',
+            lngLat: [-3.588542276079693, 37.176456572577536]
+        },
+        {
+            title: 'Pozo de Darvazá, Turkmenistán',
+            description: 'Antigua prospección de gas de 30 metros de profundidad ubicada en el desierto de Karakum creada en 1971 y que actualmente aún está ardiendo sin parar',
+            lngLat: [58.439612038982375, 40.25289208816983]
         }
     ]
 }

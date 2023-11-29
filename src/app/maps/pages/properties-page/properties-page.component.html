@@ -15,7 +15,9 @@
             <!-- Lugares -->
             <div class="col-4 mb-2" *ngFor="let place of places">    
                 <div class="card">
-                    <!-- <img src="..." class="card-img-top"> -->        
+                    <!-- <img src="..." class="card-img-top"> -->
+                    <map-mini-map [lngLat]="place.lngLat"/>
+                    
                     <div class="card-body">
                         <h5 class="card-title">{{ place.title }}</h5>
                         <p class="card-text">{{ place.description }}</p>
