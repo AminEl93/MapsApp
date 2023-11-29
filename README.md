@@ -9,6 +9,6 @@ Esta aplicación consiste en un mapa creado con [Mapbox](https://www.mapbox.com/
 
 En cuanto a la aplicación, hay un menú con 4 opciones para interactuar con el mapa:
 - **FullScreen** = Poner el mapa en pantalla completa
-- **ZoomRange** = Obtener las coordenadas geográficas reales y actuales con un zoom grande
-- **Marcadores** = Ver los marcadores establecidos (se pueden añadir y borrar)
-- **Lugares** = Ver las propiedades de las ubicaciones seleccionadas
+- **ZoomRange** = Obtener las coordenadas geográficas reales con un medidor de zoom
+- **Marcadores** = Ver los marcadores establecidos en el mapa. Se pueden añadir, mover y borrar
+- **Lugares** = Ver la descripción de los diferentes lugares favoritos en las ubicaciones seleccionadas
