@@ -1,0 +1,29 @@
+<div class="row mt-3 pe-5">
+    <div class="col-2"></div>
+    <div class="col">
+        <h3>Listado de los lugares</h3>
+        <hr>
+    </div>
+</div>
+  
+<div class="row mt-2 pe-5">    
+    <div class="col-2"></div>
+  
+    <div class="col">
+  
+        <div class="row">  
+            <!-- Lugares -->
+            <div class="col-4 mb-2" *ngFor="let place of places">    
+                <div class="card">
+                    <!-- <img src="..." class="card-img-top"> -->        
+                    <div class="card-body">
+                        <h5 class="card-title">{{ place.title }}</h5>
+                        <p class="card-text">{{ place.description }}</p>
+                    </div>
+                </div>  
+            </div>    
+        </div> 
+  
+    </div>
+</div>
+  

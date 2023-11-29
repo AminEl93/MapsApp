@@ -11,4 +11,4 @@ En cuanto a la aplicación, hay un menú con 4 opciones para interactuar con el 
 - **FullScreen** = Poner el mapa en pantalla completa
 - **ZoomRange** = Obtener las coordenadas geográficas reales y actuales con un zoom grande
 - **Marcadores** = Ver los marcadores establecidos (se pueden añadir y borrar)
-- **Casas** = Ver las propiedades de las ubicaciones seleccionadas
+- **Lugares** = Ver las propiedades de las ubicaciones seleccionadas
