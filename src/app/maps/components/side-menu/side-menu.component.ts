@@ -16,7 +16,7 @@ export class SideMenuComponent {
     public menuItems: MenuItem[] = [
         { route: '/maps/fullscreen', name: 'FullScreen' },
         { route: '/maps/zoom-range', name: 'ZoomRange' },
-        { route: '/maps/markers', name: 'Markers' },
-        { route: '/maps/properties', name: 'Houses' }
+        { route: '/maps/markers', name: 'Marcadores' },
+        { route: '/maps/properties', name: 'Casas' }
     ];
 }

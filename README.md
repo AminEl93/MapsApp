@@ -10,5 +10,5 @@ Esta aplicación consiste en un mapa creado con [Mapbox](https://www.mapbox.com/
 En cuanto a la aplicación, hay un menú con 4 opciones para interactuar con el mapa:
 - **FullScreen** = Poner el mapa en pantalla completa
 - **ZoomRange** = Obtener las coordenadas geográficas reales y actuales con un zoom grande
-- **Markers** = Ver los marcadores establecidos (se pueden añadir y borrar)
-- **Houses** = Ver las propiedades de las ubicaciones seleccionadas
+- **Marcadores** = Ver los marcadores establecidos (se pueden añadir y borrar)
+- **Casas** = Ver las propiedades de las ubicaciones seleccionadas
