@@ -1,6 +1,11 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Map, LngLat, Marker } from 'mapbox-gl';
 
+interface MarkerAndColor {
+    color: string;
+    marker: Marker;
+}
+
 @Component({
     templateUrl: './markers-page.component.html',
     styleUrls: ['./markers-page.component.css']
@@ -9,6 +14,8 @@ import { Map, LngLat, Marker } from 'mapbox-gl';
 export class MarkersPageComponent {
     
     @ViewChild('map') divMap?: ElementRef;
+
+    public markers: MarkerAndColor[] = [];
 
     public map?: Map;
     public currentLngLat: LngLat = new LngLat(2.159941673535286, 41.38693544873411);
@@ -33,7 +40,7 @@ export class MarkersPageComponent {
         */
     }
 
-    // Crear un marcador en el mapa
+    // Crear un marcador
     createMarker() {
         if (!this.map) return;    
         // Generar un color hexadecimal de manera aleatoria
@@ -42,12 +49,28 @@ export class MarkersPageComponent {
         this.addMarker(lngLat, color);
     }
 
-    // Añadir un marcador en el mapa
+    // Añadir un marcador
     addMarker(lngLat: LngLat, color: string) {
         if (!this.map) return;    
         const marker = new Marker({
             color: color,
             draggable: true
-        }).setLngLat(lngLat).addTo(this.map);    
+        }).setLngLat(lngLat).addTo(this.map);
+
+        this.markers.push({ color, marker, });
     }
+
+    // Borrar un marcador   
+    deleteMarker(index: number) {
+        this.markers[index].marker.remove();
+        this.markers.splice(index, 1);
+    }
+
+    // Navegar hacia un marcador concreto
+    flyTo(marker: Marker) {
+        this.map?.flyTo({
+            zoom: 15,
+            center: marker.getLngLat()
+        });    
+    }    
 }
