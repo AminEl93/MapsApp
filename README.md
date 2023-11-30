@@ -12,5 +12,6 @@ En cuanto a la aplicación, hay un menú con 4 opciones para interactuar con el 
 - **ZoomRange** = Obtener las coordenadas geográficas reales con un medidor de zoom
 - **Marcadores** = Ver los marcadores establecidos en el mapa. Se pueden añadir, mover y borrar
 - **Lugares** = Ver la descripción de los diferentes lugares favoritos en las ubicaciones seleccionadas
+- **Standalone** = Ver la información de un Standalone Component
 
 También se ha enfocado en trabajar una nueva característica de Angular que son los [Standalone Components](https://angular.io/guide/standalone-components) y cómo utilizarlos.
